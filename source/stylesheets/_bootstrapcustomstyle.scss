@@ -1,0 +1,156 @@
+//NAVIGATION BAR VARIABLES//
+
+//Navbar and Toggle Background//
+$navbar-background: #9b59b6;
+//Navbar Border Color//
+$navbar-border: #8e44ad;
+
+//Text,Caret, and Brand Color//
+$default-color: #ecf0f1;
+//Text,Caret, and Brand Hover Color//
+$hover-color: #bdc3c7;
+
+//Active Text Color//
+$active-color: #ecf0f1;
+//Active Tab Color//
+$active-tab: #8e44ad;
+//Active Dropdown Menu Background Color//
+$active-dropdown: #8e44ad;
+
+//Toggle Icon and Border Color//
+$nav-icon-color: #ecf0f1;
+//Toggle Hover Background Color//
+$nav-icon-hover: #8e44ad;
+
+
+//BODY STYLE VARIABLES//
+
+//Background Color//
+$background: url('../images/congruent_pentagon.jpg') repeat;
+//Headline Color//
+$headline-color: black;
+//Paragraph Color//
+$p-color: black;
+//Hyperlink Color//
+$a-color: black;
+//Icon/FontAwesome Color//
+$i-color: black;
+//List Item Color//
+$li-color: black;
+
+
+//MISC STYLES//
+
+//Jumbotron Background Color//
+$jumbobg: #E1E4E6;
+//Jumbotron Shadow//
+$jumboshadow: #ccc;
+
+
+
+
+//BEGIN CSS//
+
+/* navbar */
+.navbar-default {
+    background-color: $navbar-background;
+    border-color: $navbar-border;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: $default-color;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: $hover-color;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: $default-color;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: $hover-color;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: $active-color;
+    background-color: $active-tab;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: $active-color;
+    background-color: $active-dropdown;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: $default-color;
+    border-bottom-color: $default-color;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: $hover-color;
+    border-bottom-color: $hover-color;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: $active-color;
+    border-bottom-color: $active-color;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: $nav-icon-color;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: $nav-icon-hover;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $nav-icon-color;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: $default-color;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: $hover-color;
+    }
+}
+
+/* body */
+
+body{
+    background: $background;
+    
+    //nested h1,h2,h3,h4//
+    h1,h2,h3,h4{
+        color: $headline-color;
+    }
+    p{
+        color: $p-color;
+    }
+    a,a:hover{
+        color: $a-color;
+    }
+    i{
+        color: $i-color;
+    }
+    li{
+        color: $li-color;
+    }
+}
+
+// MISC //
+
+/*Jumbotron*/
+
+.jumbotron{
+    background-color: $jumbobg;
+    -moz-box-shadow:    1px 2px 0px 0px $jumboshadow;
+    -webkit-box-shadow: 1px 2px 0px 0px $jumboshadow;
+    box-shadow:         1px 2px 5px 0px $jumboshadow;
+}

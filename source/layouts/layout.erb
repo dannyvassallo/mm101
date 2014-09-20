@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "EmberMM" %></title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,500,500italic,700italic' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag "normalize", "all" %>
+  </head>
+  
+  <body class="<%= page_classes %>">
+    <%= yield %>
+    
+    <%= partial "partials/emberpartials" %>
+
+    <%= javascript_include_tag  "all" %>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+  </body>
+</html>

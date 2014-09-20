@@ -1,0 +1,59 @@
+<!-- INDEX -->
+  <script type="text/x-handlebars" id="index">
+    <img class="img-responsive main-img" src="images/embermmlogo.svg">
+    <h2>An EmberJS/Middleman BoilerPlate</h2>
+    <h3>Made to help organize EmberJS with Middleman partials</h3>
+    <h4> + Some extra goodies! </h4>
+    <br>
+    <h4>This Boilerplate Contains:</h1>
+    <ul class="indexlist">
+      <li><i class="fa fa-check-circle-o fa-2x"></i><%= link_to 'jQuery 1.10.2', 'http://www.jquery.com' %></li>
+      <li><i class="fa fa-check-circle-o fa-2x"></i><%= link_to 'EmberJS 1.7.0', 'http://www.emberJS.com' %></li>
+      <li><i class="fa fa-check-circle-o fa-2x"></i><%= link_to 'Bootstrap 3 CDN', 'http://www.getbootstrap.com' %></li>
+      <li><i class="fa fa-check-circle-o fa-2x"></i>
+ <%= link_to 'Font Awesome CDN', 'http://fortawesome.github.io/Font-Awesome/' %> <i class="fa fa-thumbs-up"></i> </li>
+      <li class="pulse"><i class="fa fa-check-circle-o fa-2x"></i><%= link_to 'CSS Animation Sheet by Justin Aguilar', 'http://www.justinaguilar.com/animations/' %></li>
+      <li><i class="fa fa-check-circle-o fa-2x"></i><%= link_to 'Background by Subtle Patterns', 'http://subtlepatterns.com/' %></li>
+      <li><i class="fa fa-check-circle-o fa-2x"></i>Custom Bootstrap SCSS Variables</li>
+      <li><i class="fa fa-check-circle-o fa-2x"></i>Ember segmented into MM Partials</li>
+      <li><i class="fa fa-check-circle-o fa-2x"></i>JS/CSS segmented into MM Partials</li>
+      <li><i class="fa fa-check-circle-o fa-2x"></i>Minify JS/CSS Enabled </li>
+      <li><i class="fa fa-check-circle-o fa-2x"></i>LiveReload Enabled</li>
+      <li><i class="fa fa-check-circle-o fa-2x"></i>Heroku Deployable</li>
+      <li><i class="fa fa-check-circle-o fa-2x"></i>{{#link-to 'console' tagName='a'}}IE Friendly Console Log by Mark Allen{{/link-to}}</li>
+    </ul>
+  </script>
+
+<!-- ABOUT -->
+
+  <script type="text/x-handlebars" id="about">
+    <h2>About<img src="images/embermmblack.svg"></h2>
+    <div class="abouttext">
+      <p>Hello!</p>
+      <p>EmberMM is an opensource personal project.</p>
+      <p>I made this to serve as a boilerplate for Middleman using EmberJS and Bootstrap to help streamline the development process and make it easier to start a project. I have used The CSS3 Animation Cheatsheet from Justin Aguilar to easily add animations without needing much or any jQuery experience. I also added some custom SCSS variables in plain english to help easily customize bootstrap without the headache of searching for classnames. Mark Allen was nice enough to contribute a (simple) but extremely efficient way of safely console logging your JS/jQuery code without having to worry about crashing Internet Explorer.</p>
+      <p>If you can or want to use this, Feel free!</p>
+      <p> -Danny Vassallo</p>
+    </div>
+
+  </script>
+
+<!-- TEST -->
+
+  <script type="text/x-handlebars" id="test">
+    <h2>Test Page</h2>
+    <p><%= lorem.paragraphs 10 %></p>
+  </script>
+
+<!-- CONSOLE -->
+
+  <script type="text/x-handlebars" id="console">
+    <h2><img src="images/embermmblack.svg"> IE Friendly Logging</h2>
+    <p>Use this syntax to safely console log:</p>
+    <pre>
+      <code class="html xml">debug(<span class="jstext">"Message 1"</span>, <span class="jstext">"Message 2"</span>);
+      </code>
+    </pre>
+    <br>
+    {{#link-to 'index' tagName='a'}}<-Back{{/link-to}}
+  </script>
