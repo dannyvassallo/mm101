@@ -1,5 +1,18 @@
 activate :livereload
 
+configure :development do
+  activate :disqus do |d|
+    # using a special shortname
+    d.shortname = "mm101"
+  end
+end
+
+configure :build do
+  activate :disqus do |d|
+    # using a different shortname for production builds
+    d.shortname = "mm101"
+  end
+end
 ###
 # Compass
 ###
@@ -73,3 +86,4 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
