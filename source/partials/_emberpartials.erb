@@ -1,27 +1,16 @@
 <!-- INDEX -->
   <script type="text/x-handlebars" id="index">
-    <img class="img-responsive main-img" src="images/embermmlogo.svg">
-    <h2>An EmberJS/Middleman BoilerPlate</h2>
-    <h3>Made to help organize EmberJS with Middleman partials</h3>
-    <h4> + Some extra goodies! </h4>
+    <h2>Lesson 1</h2>
     <br>
-    <h4>This Boilerplate Contains:</h1>
-    <ul class="indexlist">
-      <li><i class="fa fa-check-circle-o fa-2x"></i><%= link_to 'jQuery 1.10.2', 'http://www.jquery.com' %></li>
-      <li><i class="fa fa-check-circle-o fa-2x"></i><%= link_to 'EmberJS 1.7.0', 'http://www.emberJS.com' %></li>
-      <li><i class="fa fa-check-circle-o fa-2x"></i><%= link_to 'Bootstrap 3 CDN', 'http://www.getbootstrap.com' %></li>
-      <li><i class="fa fa-check-circle-o fa-2x"></i>
- <%= link_to 'Font Awesome CDN', 'http://fortawesome.github.io/Font-Awesome/' %> <i class="fa fa-thumbs-up"></i> </li>
-      <li class="pulse"><i class="fa fa-check-circle-o fa-2x"></i><%= link_to 'CSS Animation Sheet by Justin Aguilar', 'http://www.justinaguilar.com/animations/' %></li>
-      <li><i class="fa fa-check-circle-o fa-2x"></i><%= link_to 'Background by Subtle Patterns', 'http://subtlepatterns.com/' %></li>
-      <li><i class="fa fa-check-circle-o fa-2x"></i>Custom Bootstrap SCSS Variables</li>
-      <li><i class="fa fa-check-circle-o fa-2x"></i>Ember segmented into MM Partials</li>
-      <li><i class="fa fa-check-circle-o fa-2x"></i>JS/CSS segmented into MM Partials</li>
-      <li><i class="fa fa-check-circle-o fa-2x"></i>Minify JS/CSS Enabled </li>
-      <li><i class="fa fa-check-circle-o fa-2x"></i>LiveReload Enabled</li>
-      <li><i class="fa fa-check-circle-o fa-2x"></i>Heroku Deployable</li>
-      <li><i class="fa fa-check-circle-o fa-2x"></i>{{#link-to 'console' tagName='a'}}IE Friendly Console Log by Mark Allen{{/link-to}}</li>
-    </ul>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/-m2fVWj99x4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <br>
+    <p>1) Install Middleman</p>
+    <pre>
+      <code><span class="terminal">$ gem install middleman</span></code>
+    </pre>
+    <br>
   </script>
 
 <!-- ABOUT -->
@@ -48,12 +37,5 @@
 <!-- CONSOLE -->
 
   <script type="text/x-handlebars" id="console">
-    <h2><img src="images/embermmblack.svg"> IE Friendly Logging</h2>
-    <p>Use this syntax to safely console log:</p>
-    <pre>
-      <code class="html xml">debug(<span class="jstext">"Message 1"</span>, <span class="jstext">"Message 2"</span>);
-      </code>
-    </pre>
-    <br>
-    {{#link-to 'index' tagName='a'}}<-Back{{/link-to}}
+
   </script>
